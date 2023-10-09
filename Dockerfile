@@ -29,4 +29,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY start.sh /start.sh
 
 # Define the command to start your bot
-CMD ["/bin/bash", "/start.sh"] 
+CMD ["bash", "start.sh"] 
