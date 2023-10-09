@@ -26,7 +26,7 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy the rest of the application code to the working directory
-COPY . .
+COPY start.sh /start.sh
 
 # Define the command to start your bot
-CMD ["python", "bot.py"]
+CMD ["/bin/bash", "/start.sh"] 
