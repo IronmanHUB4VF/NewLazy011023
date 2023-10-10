@@ -12,7 +12,7 @@
 # CMD ["/bin/bash", "/start.sh"] 
 
 # Use an official Python runtime as a parent image
-FROM python:3.10.8-slim-buster
+FROM python:3.10.1-slim-buster
 RUN apt update && apt upgrade -y
 RUN apt install git -y
 RUN mkdir /LazyPrincess
